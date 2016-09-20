@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--CSS Styles & JavaScrip extern files-->
+	<link rel="stylesheet" href="styleCSS.css" type="text/css">
+    <script type="text/javascript" src="java.js" ></script>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Rules</title>
+</head>
+
+<body>
+
+	 <!-- Sliding Menu -->
+	<div id="mySidenav" class="sidenav">
+		<div style=" display: inline-block; position:absolute; top:10px;">
+			<img class="logo" src="images/github.png" alt="GitHub" >
+			<a href="https://github.com/FilipeBicho" style="float:right"> Filipe Bicho </a>"
+		</div>
+		<hr>
+		<a href="resume.html">Resume</a>
+		<a href="#" style="background-color:#FF9900">Rules</a>
+		<a href="code.html">Code</a>
+		<a href="play.html">Play</a>
+		<a href="contact.php">Contact</a>
+		<hr>
+		<img  src="images/logo.gif" alt="logo">	
+	</div>
+	
+	<div id="main">
+		<!-- Open & Close Menu -->	
+		<span class="menu" rel="mySidenav" onclick="openClose(this,'View ','Hide')">&#9776; Menu</span>
+		<div class="center">
+			<!-- HeadLine -->
+			<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'> 
+			<h1 class="headline"> Rules </h1>
+		
+			<button class="buttonRules" style="background-image:url('images/Rules_images/how_to_play.png'); margin-top:-10px" 
+			type="button" onclick="openBox('how_to_play','boxHow_to_play')"></button>
+			
+			<button class="buttonRules" style="background-image:url('images/Rules_images/hand_ranking.png')" 
+			type="button" onclick="openBox('hand_rankings','boxHand_ranking')"></button>
+
+			<button class="buttonRules" style="background-image:url('images/Rules_images/quiz.jpg')" 
+			type="button" onclick="openBox('quiz','boxQuiz')"></button>
+
+			
+		</div>
+	</div>
+	
+	<!--Rules-->
+	<div class="Hide" id="boxHow_to_play">
+		<div  id="how_to_play" class="textRules" style="display:none;">
+				<span class="closeButton" onclick="closeBox('how_to_play','boxHow_to_play')"></span>
+			<h1 class="title">Rules</h1>
+			<hr>
+			<h2>The Blinds</h2>
+			<p>In Hold'em, a marker called ‘the button’ or ‘the dealer button’ 
+			indicates which player is the nominal dealer for the current game. 
+			Before the game begins, the player immediately clockwise from the button 
+			posts the "small blind", the first forced bet. The player immediately clockwise 
+			from the small blind posts the "big blind", which is typically twice the size of the 
+			small blind, but the blinds can vary depending on the stakes and betting structure being played.</p>
+			<hr>
+			<h2>Player Betting Options</h2>
+			<p>In Hold'em, as with other forms of poker, the available actions are ‘fold’, ‘check’, 
+			‘bet’, ‘call’ or ‘raise’. Exactly which options are available depends on the action taken
+			 by the previous players. Each poker player always has the option to fold, to discard their
+			 cards and give up any interest in the pot. If nobody has yet made a bet, then a player may
+			 either check (decline to bet, but keep their cards) or bet. If a player has bet, then subsequent
+			 players can fold, call or raise. To call is to match the amount the previous player has bet. To raise
+			 is to not only match the previous bet, but to also increase it.</p>
+			 <hr>
+			 <h2>Pre-Flop</h2>
+			 <p>After seeing his or her hole cards, each player now has the option to play his or 
+			 her hand by calling or raising the big blind. The action begins to the left of the big blind, 
+			 which is considered a ‘live’ bet on this round. That player has the option to fold, call or raise. 
+			 For example, if the big blind was $2, it would cost $2 to call, or at least $4 to raise. Action then 
+			 proceeds clockwise around the table.</p>
+			 <hr>
+			 <h2>The Flop</h2>
+			 <p>Now, three cards are dealt face-up on the board. This is known as ‘the flop’. In Hold'em, 
+			 the three cards on the flop are community cards, available to all players still in the hand. 
+			 Betting on the flop begins with the active player immediately clockwise from the button. The betting 
+			 options are similar to pre-flop, however if nobody has previously bet, players may opt to check, 
+			 passing the action to the next active player clockwise.</p>
+			 <hr>
+			 <h2>The Turn</h2>
+			 <p>When the betting action is completed for the flop round, the ‘turn’ is dealt face-up on the board.
+			 The turn is the fourth community card in Hold'em (and is sometimes also called ‘Fourth Street’).
+			 Another round of betting ensues, beginning with the active player 
+			 immediately clockwise from the button.</p>
+			 <hr>
+			 <h2>The River</h2>
+			 <p>When betting action is completed for the turn round, the ‘river’ or ‘Fifth Street’ is dealt 
+			 face-up on the board. The river is the fifth and final community card in a Hold'em game. Betting 
+			 again begins with the active player immediately clockwise from the button, and the same betting rules 
+			 apply as they do for the flop and turn, as explained above.</p>
+			 <hr>
+			 <h2>The Showdown</h2>
+			 <p>If there is more than one remaining player when the final betting round is complete, the last person 
+			 to bet or raise shows their cards, unless there was no bet on the final round in which case the player 
+			 immediately clockwise from the button shows their cards first. The player with the best five-card poker 
+			 hand wins the pot. In the event of identical hands, the pot will be equally divided between the players 
+			 with the best hands. Hold'em rules state that all suits are equal.
+			 After the pot is awarded, a new hand of Hold'em is ready to be played. The button now moves clockwise to 
+			 the next player, blinds and antes are once again posted, and new hands are dealt to each player.</p>
+		</div>
+	</div>
+
+	<!--Hand Ranking-->
+	<div class="Hide" id="boxHand_ranking">
+		<div  id="hand_rankings" class="textRules" style="display:none;">
+			<span class="closeButton" onclick="closeBox('hand_rankings','boxHand_ranking')"></span>
+			<h1 class="title">Rules</h1>
+			<table style="background-color:whitesmoke;">
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Royal Flush" onclick=cardRank(0);>
+					</td>
+					<td  rowspan="10">
+						<img src="images/Rules_images/Poker_Hands/ini.jpg" alt="ini" class="imgHand" id="muda">
+						<p id="txt0"></p>
+					</td> 		
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Straight Flush " onclick=cardRank(1);>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Four of a Kind" onclick=cardRank(2);>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Full House " onclick=cardRank(3);>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Flush" onclick=cardRank(4);>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Straight " onclick=cardRank(5);>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Three of a kind" onclick=cardRank(6);>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Two pairs " onclick=cardRank(7);>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" Pair " onclick=cardRank(8);>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="buttonHand" type="button" value=" High card " onclick=cardRank(9);>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!--Quiz-->
+	<div class="Hide" id="boxQuiz">
+		<div  id="quiz" class="textRules" style="display:none;">
+			<span class="closeButton"  onclick="closeBox('quiz','boxQuiz')"></span>
+			<h1 class="title">Quiz</h1>
+			<form name="quiz">
+				<div id="Page1">
+					<hr>
+					<!-- Questions -->
+					1. What is the worst hand in hold'em Poker? 		
+					<ul style="margin-top: 1pt">
+					  <li><input type="radio" name="q1" value="2 3">2&#9829; 3&#9824;</li>
+					  <li><input type="radio" name="q1" value="2 7">2&#9827; 7&#9830;</li>
+					  <li><input type="radio" name="q1" value="2 2">2&#9830; 2&#9829;</li>
+					</ul>
+					<hr>
+					2. On the table is A&#9829;10&#9829; 2&#9830;  J&#9829;  A&#9827; who will win the game?
+					<ul style="margin-top: 1pt">
+					  <li><input type="radio" name="q2" value="A A">A&#9830; A&#9824;</li>
+					  <li><input type="radio" name="q2" value="Q K">Q&#9829; K&#9829;</li>
+					  <li><input type="radio" name="q2" value="J J">J&#9830; J&#9827;</li>
+					</ul>	
+					<hr>
+					3. Who has the bigger odds A&#9824; K&#9829; or 2&#9829; 2&#9824; ?
+					<ul style="margin-top: 1pt">
+					  <li><input type="radio" name="q3" value="A K">A&#9824; K&#9829;</li>
+					  <li><input type="radio" name="q3" value="2 2">2&#9829; 2&#9824;</li>
+					  <li><input type="radio" name="q3" value="both">They have the same odds.</li>
+					</ul>
+					<hr>
+					4. You have 7&#9824; 5&#9824; and the flop is 3&#9824; 7&#9827; 4&#9830; 
+					what would be the best turn and river?
+					<ul style="margin-top: 1pt">
+					  <li><input type="radio" name="q4" value="7 2">7&#9830; 2&#9829;</li>
+					  <li><input type="radio" name="q4" value="6 8">6&#9830; 8&#9827;</li>
+					  <li><input type="radio" name="q4" value="2 Q">2&#9824; Q&#9824;</li>
+					</ul>
+					<hr>
+					 <a href="#" onclick="return show('Page2','Page1');">
+					 	<img alt="previous" src="images/Rules_images/arrowL.png" width="50" height="50">
+					 </a>
+				</div>
+				
+				<div id="Page2" style=" display:none">
+					<hr>
+					<!-- Questions -->
+					5. On the table is A&#9829; 7&#9830; 5&#9824; 4&#9830; R&#9829; which one is the worst game? 		
+					<ul style="margin-top: 1pt">
+					  <li><input type="radio" name="q5" value="2 3">2&#9829; 3&#9830;</li>
+					  <li><input type="radio" name="q5" value="Q J">Q&#9830; J&#9830;</li>
+					  <li><input type="radio" name="q5" value="7 2">7&#9824; 2&#9827;</li>
+					</ul>
+					<hr>
+					6. One of the most popular hands in poker is called a Full House. What is a full house??
+					<ul style="margin-top: 1pt">
+					  <li><input type="radio" name="q6" value="Face">A hand with all face cards.</li>
+					  <li><input type="radio" name="q6" value="3f+2">Three face cards and a pair of number cards.</li>
+					  <li><input type="radio" name="q6" value="3+2">Three of a kind and two of a kind.</li>
+					</ul>	
+					<hr>
+					7. Which of the following hands is the highest of the three?		
+					<ul style="margin-top: 1pt">
+					  <li><input type="radio" name="q7" value="three">Three of a Kind.</li>
+					  <li><input type="radio" name="q7" value="flush">Flush.</li>
+					  <li><input type="radio" name="q7" value="23456">Straight.</li>
+					</ul>
+					<hr>
+					8. How many Poker hands exists?
+					<ul style="margin-top: 1pt">
+					  <li><input type="radio" name="q8" value="11">11</li>
+					  <li><input type="radio" name="q8" value="9">9</li>
+					  <li><input type="radio" name="q8" value="10">10</li>
+					</ul>
+					<hr>
+					 <a href="#" onclick="return show('Page1','Page2');" >
+					 	<img alt="previous" src="images/Rules_images/arrowR.png" width="50" height="50">
+					 </a>
+				</div>
+				<hr>
+				<!-- score and clean -->
+				<input type="button" value=" " onClick="getScore(this.form)" class="score">
+				<input type="reset" value=" " class="reset">
+				<p> Score = <strong><input class="bgclr" type="text" size="5" name="percentage" disabled></strong><br><br>
+				Correct answers:<br>
+				<textarea class="bgclr" name="solutions" rows="4" cols="30" disabled></textarea>
+			</form>
+		</div>
+	</div>
+	
+</body>
+
+</html>

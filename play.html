@@ -1,0 +1,123 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--CSS Styles & JavaScrip extern files-->
+	<link rel="stylesheet" href="styleCSS.css" type="text/css">
+    <script type="text/javascript" src="java.js" ></script>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Play</title>
+</head>
+
+<body>
+	
+	<!-- Sliding Menu -->
+	<div id="mySidenav" class="sidenav">
+		<div style=" display: inline-block; position:absolute; top:10px;">
+			<img class="logo" src="images/github.png" alt="GitHub" >
+			<a href="https://github.com/FilipeBicho" style="float:right"> Filipe Bicho </a>"
+		</div>
+		<hr>
+		<a href="resume.html">Resume</a>
+		<a href="rules.html">Rules</a>
+		<a href="code.html">Code</a>
+		<a href="#" style="background-color:#FF9900">Play</a>
+		<a href="contact.php">Contact</a>
+		<hr>
+		<img  src="images/logo.gif" alt="logo">
+	</div>
+	
+	<div id="main">
+		<!-- Open & Close Menu -->	
+		<span class="menu" rel="mySidenav" onclick="openClose(this,'View ','Hide')">&#9776; Menu</span>
+		<div class="center">
+		<!-- HeadLine -->
+			<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'> 
+			<h1 class="headline"> Play </h1>
+			
+			<!-- Resume Menu-->
+			<table class="playMenu">
+						
+				<tr>
+					<td class="playButton" style="background-image:url('images/Play_images/requirement.jpg')"onclick="openBox('requirement','boxRequirement')"></td>
+				</tr>
+				<tr>
+					<td class="playButton" style="background-image:url('images/Play_images/play.png')"onclick="openBox('play','boxPlay')"></td>
+				</tr>
+					
+			</table>
+			
+			
+			
+			
+			</div>
+	</div>
+	
+	<!-- Requirements -->
+	<div class="Hide" id="boxRequirement">
+		<div  id="requirement" class="playBox" style="display:none; top:200px">
+			<span class="closeButton" onclick="closeBox('requirement','boxRequirement')"></span>
+			<!-- HeadLine -->
+			<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'> 
+			<h1 class="title">Intructions</h1>
+			<hr>
+			<ol>
+				<li>You must have the lastest java update. You can download here : 
+				<a href="https://www.java.com/pt_BR/download/win10.jsp" target="_blank">
+							<img src="images/Play_images/java.png" class="playImg" alt="java">
+				</a>
+				</li>
+				<li>You must add this page to the list of sites exception in your Java Control Panel for security reasons.</li>
+			</ol>
+			<ol style="padding-left:20px">
+				<li>Search for Configure Java.<br>
+					<img src="images/Play_images/configure_java.png" alt="1">
+				</li>
+				<li>Select Security in Java Control Panel and look for Edit Site List.<br>
+					<img src="images/Play_images/Java_Control_Panel.png" alt="2"> 
+				</li>
+				<li>Copy this Link: http://filipebch.16mb.com/webPage/play.html and past on Edit Sute List.<br>
+					<img src="images/Play_images/Exception_Site_List.png" alt="3">				
+				 </li>
+				 <li>Press add and then continue.<br>
+				 	<img src="images/Play_images/security_warning.png" alt="3">
+				 </li>
+				 <li>You can also download the Probability Poker Game and play on an appletviewer on your PC.<br>
+			 		<a href="Poker_game/exe.rar" download>
+						<img src="images/Play_images/download.png" class="playImg"  alt="download">
+					</a>
+				 </li>
+			</ol>
+
+  			
+		</div>
+	</div>
+
+	
+	
+	<!-- Play -->
+	<div class="Hide" id="boxPlay">
+		<div  id="play" class="playBox" style="display:none; top:200px">
+			<span class="closeButton" onclick="closeBox('play','boxPlay')"></span>
+			<!-- HeadLine -->
+			<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'> 
+			<h1 class="title">Play Probability Poker Game</h1>
+			<hr>
+			<embed class="applet" code="PokerApplet.class" width="1100px" height="500px"
+  			type="application/x-java-applet;version=1.8"
+  			pluginspage="http://java.sun.com/javase/downloads/ea.jsp"/>
+  			
+		</div>
+	</div>
+
+	
+	
+	
+	
+</body>
+</html>
+
+

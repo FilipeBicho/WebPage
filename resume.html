@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--CSS Styles & JavaScrip extern files-->
+	<link rel="stylesheet" href="styleCSS.css" type="text/css">
+    <script type="text/javascript" src="java.js" ></script>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Resume</title>
+</head>
+
+<body>
+	
+	<!-- Sliding Menu -->
+	<div id="mySidenav" class="sidenav">
+		<div style=" display: inline-block; position:absolute; top:10px;">
+			<img class="logo" src="images/github.png" alt="GitHub" >
+			<a href="https://github.com/FilipeBicho" style="float:right"> Filipe Bicho </a>"
+		</div>
+		<hr>
+		<a href="#" style="background-color:#FF9900">Resume</a>
+		<a href="rules.html">Rules</a>
+		<a href="code.html">Code</a>
+		<a href="play.html">Play</a>
+		<a href="contact.php">Contact</a>
+		<hr>
+	</div>
+	
+	<div id="main">
+		<!-- Open & Close Menu -->	
+		<span class="menu" rel="mySidenav" onclick="openClose(this,'View ','Hide')">&#9776; Menu</span>
+		<div class="center">
+		<!-- HeadLine -->
+			<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'> 
+			<h1 class="headline"> Resume </h1>
+		
+			<!-- Resume Menu-->
+			<table class="resumeMenu">
+						
+				<tr>
+					<td class="resumeButton" style="background-image:url('images/Resume_images/personal_info.jpg')" onclick="openBox('personal','boxPersonal')"></td>
+					<td class="resumeButton" style="background-image:url('images/Resume_images/education.jpg')" onclick="openBox('education','boxEducation')"></td>
+				</tr>
+				<tr>
+					<td class="resumeButton" style="background-image:url('images/Resume_images/languages.png')" onclick="openBox('languages','boxLanguages')"></td>
+					<td class="resumeButton" style="background-image:url('images/Resume_images/skills.jpg')" onclick="openBox('skills','boxSkills')"></td>	
+				</tr>
+				<tr>
+					<td colspan="2" class="resumeButton" style="height:100px; background-image:url('images/Resume_images/summary.jpg')" onclick="openBox('summary','boxSummary')"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	 
+	<!-- Personal-->
+	<div class="Hide" id="boxPersonal">
+		<div  id="personal" class="textResume" style="display:none;">
+			<span class="closeButton" onclick="closeBox('personal','boxPersonal')"></span>
+			<h1 class="title">Personal</h1>
+			<hr>
+			<img src="images/Resume_images/icons/photo.jpg" alt="profilePhoto" style="float:left; display:block ">
+			<table style=" padding-top:20px;">
+				<tr>
+					<td><img src="images/Resume_images/icons/person.gif" alt="person" style="width:20px; height:30px"></td>
+					<td><strong>Name: </strong></td>
+					<td style="padding:10px">Filipe André de Matos Bicho</td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/calendar.jpg" alt="calendar" style="width:30px; height:30px"></td>
+					<td><strong>Date of Birth: </strong></td>
+					<td style="padding:10px">29/09/1987</td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/nationality.jpg" alt="nationality" style="width:30px; height:30px"></td>
+					<td><strong>Nationality: </strong></td>
+					<td style="padding:10px">Portugal</td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/Home.png" alt="adress" style="width:30px; height:30px"></td>
+					<td><strong>Adress: </strong></td>
+					<td style="padding:10px">Saas Fee, Switzerland</td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/mail.png" alt="mail" style="width:30px; height:30px"></td>
+					<td><strong>Email: </strong></td>
+					<td  style="padding:10px" >filipebch@gmail.com</td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/linkedin.png" alt="linkedIn" style="width:30px; height:30px"></td>
+					<td><strong>LinkedIn: </strong></td>
+					<td  style="padding:10px"><a href="https://ch.linkedin.com/in/filipe-bicho-7a668bb4">Filipe Bicho</a></td>
+				</tr>
+			</table>	
+		</div>
+	</div>
+		
+	<!-- Education -->
+	<div class="Hide" id="boxEducation">
+		<div id="education" class="textResume" style="display:none;">
+			<span class="closeButton" onclick="closeBox('education','boxEducation')"></span>
+			<h1 class="title">Education</h1>
+			<hr>
+			<table>
+				<tr>
+					<td style="width:100px;"><strong>From 09/13 </strong></td>
+					<td style="padding:10px">University Aberta in Computer Science</td>
+				</tr>
+				<tr>
+					<td><strong>09/07 – 04/08 </strong></td>
+					<td style="padding:10px">Eça de Queirós - Professional preparatory school year with a focus of computer science</td>
+				</tr>
+				<tr>
+					<td><strong>09/98 – 07/06 </strong></td>
+					<td style="padding:10px">Doutor Solano De Abreu - Secondary School</td>
+				</tr>
+					<tr>
+					<td><strong>09/96 – 07/98 </strong></td>
+					<td style="padding:10px">Doutor Miguel De Almeida - Secondary School</td>
+				</tr>
+				<tr>
+					<td><strong>09/92 – 07/96 </strong></td>
+					<td style="padding:10px">Primary School</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- Languages -->
+	<div class="Hide" id="boxLanguages">
+		<div  id="languages" class="textResume" style="display:none;">
+			<span class="closeButton" onclick="closeBox('languages','boxLanguages')"></span>
+			<h1 class="title">Languages</h1>
+			<hr>
+			<table>
+				<tr>
+					<td><img src="images/Resume_images/icons/portugal.png" alt="portugal" style="width:30px; height:30px"></td>
+					<td><strong>Portugues: </strong></td>
+					<td style="padding:10px">Native language</td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/english.png" alt="english" style="width:30px; height:30px"></td>
+					<td><strong>English: </strong></td>
+					<td style="padding:10px">Fluent</td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/german.png" alt="german" style="width:30px; height:30px"></td>
+					<td><strong>German: </strong></td>
+					<td style="padding:10px">Good knowledge</td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/spain.png" alt="spain" style="width:30px; height:30px"></td>
+					<td><strong>Spanish: </strong></td>
+					<td style="padding:10px">Good knowledge</td>
+				</tr>
+					<tr>
+					<td><img src="images/Resume_images/icons/french.png" alt="french" style="width:30px; height:30px"></td>
+					<td><strong>French: </strong></td>
+					<td style="padding:10px">Basic</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!-- Skills -->
+	<div class="Hide" id="boxSkills">
+		<div  id="skills" class="textResume" style="display:none;">
+			<span class="closeButton" onclick="closeBox('skills','boxSkills')"></span>
+			<h1 class="title">Skils</h1>
+			<hr>
+			<table>
+				<tr>
+					<td><img src="images/Resume_images/icons/C.png" alt="C" style="width:30px; height:30px"></td>
+					<td><strong>C:  </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/70.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/c++.png" alt="C" style="width:30px; height:30px"></td>
+					<td><strong>C++: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/60.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/java.png" alt="java" style="width:30px; height:40px"></td>
+					<td><strong>Java: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/90.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/assembly.png" alt="assembly" style="width:40px; height:40px"></td>
+					<td><strong>Assembly: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/25.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/ocaml.png" alt="ocaml" style="width:40px; height:40px"></td>
+					<td><strong>Ocaml: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/50.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/prolog.png" alt="prolog" style="width:40px; height:40px"></td>
+					<td><strong>Prolog: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/50.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/html.png" alt="html" style="width:40px; height:40px"></td>
+					<td><strong>HTML: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/90.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/css.png" alt="css" style="width:40px; height:40px"></td>
+					<td><strong>CSS: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/90.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/js.png" alt="js" style="width:40px; height:40px"></td>
+					<td><strong>JavaScript: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/80.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/sql.png" alt="sql" style="width:40px; height:40px"></td>
+					<td><strong>SQL: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/60.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/linux.png" alt="linux" style="width:40px; height:40px"></td>
+					<td><strong>Linux: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/40.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/pm.jpg" alt="pm" style="width:40px; height:40px"></td>
+					<td><strong>Project Manegement: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/50.png" alt="50%" class="skillImg"></td>
+				</tr>
+				<tr>
+					<td><img src="images/Resume_images/icons/cg.png" alt="cg" style="width:40px; height:40px"></td>
+					<td><strong>Computer Graphics: </strong></td>
+					<td style="padding:10px"><img src="images/Resume_images/Progress_bar/40.png" alt="50%" class="skillImg"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!-- Summary -->
+	<div class="Hide" id="boxSummary">
+		<div  id="summary" class="textResume" style="display:none; top:200px">
+			<span class="closeButton" onclick="closeBox('summary','boxSummary')"></span>
+			<h1 class="title">Sumary</h1>
+			<hr>
+			<p>A Software Developer student with deep interest in new technologies and coding.</p> 
+			<p>Currently looking for a internship in Software Developer or a job as Software Developer Junior.</p>
+			<p>At the moment I am working on a Java project based on the poker game and developing 
+			my own web page with languages HTML5, CSS, JavaScript and PHP.</p>
+			<p>After these projects are completed I will keep working on new projects to improve my skills.</p>
+		</div>
+	</div>
+
+</body>

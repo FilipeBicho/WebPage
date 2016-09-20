@@ -1,0 +1,634 @@
+﻿/* This makes sure that the padding and border are included in the total width and height of the elements. */
+* {
+    box-sizing: border-box;
+}
+
+/* Body background */
+body{
+    position:relative;
+	background-image:url('images/background2.jpg');             
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    margin:0
+}
+ 
+/* Button to close in every pages */
+.closeButton{
+	float:right;
+	margin-top:22px;
+	width:35px; 
+	height:35px; 
+	background-repeat:no-repeat;				/* Background image dont repeat and is full screen */
+	background-position:center;
+	background-image:url('images/close.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	border-radius:15px;
+}
+
+.closeButton:hover{
+ 	cursor:pointer
+ }
+
+.closeButton:active{
+ 	box-shadow: 1px 1px 1px black;		
+ 	transform: translateY(1px) translateX(1px)		/* Card button moves 4 px on x axis and on y axis */
+}
+
+/* Title background in all pages */
+.title{
+	background-color:#FF9900;			/* Orange */ 
+}
+
+/* Headline in all pages */
+.headline{
+	font: 400 100px/1.2 'Leckerli One', Helvetica, sans-serif;
+    color: #111;
+  	text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
+	position:relative;
+	text-decoration:underline
+}
+ 
+/* Center menu */
+.center {
+	margin-top:-100px;
+	margin-left:300px;
+    width: 50%;
+    padding: 1px;
+}
+
+/* hide de background page and show just the box */
+.Hide, body:after{
+	display:none;
+ 	position:fixed;
+    content:"";
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgb(0,0,0); 		/* Fallback color */
+    background-color: rgba(0,0,0,0.7);  /* Black w/ opacity */
+    z-index:1;
+}
+/* ----------------------------------------------MENU ----------------------------------------------------*/
+
+/* Open slide menu */
+.menu{
+	background-color:#FF9900;
+	font-size:30px;
+	cursor:pointer;
+}
+
+
+/* Logo in the menu */
+.logo{
+ 	float:left;
+	height:50px;
+	width:50px
+}
+
+/* Slide menu */
+.sidenav {
+    height: 100%;					/* Full height */
+    width: 0;						/* Hidden width */
+    position: fixed;				/* Stays in place */
+    z-index: 1;						/* Shows on the top */
+    top: 0;							/* Left top corner */
+    left: 0;
+    background-color: #111;			/* light black */
+    overflow-x: hidden;				/* The content is clipped - and no scrolling mechanism is provided */
+    transition: 0.5s;				/* Transition takes half second */
+    padding-top: 60px;
+}
+
+
+/* Opened Menu */
+.sidenav a {
+    padding: 8px 8px 8px 32px;		
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;					/* Displays an element as a block element */
+    transition: 0.1s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    background-color:darkgray		/* Background color changes to dark gray on mouse hover */
+}
+
+/* when menu is open slides to left */
+#main {
+    transition: margin-left .5s;	/* Half Second to transition for left side */
+    padding: 1px;
+}
+
+
+/* --------------------------------------------- Resume --------------------------------------------------------------------*/
+/* Edit table in resume */
+.resumeMenu{
+	table-layout:fixed;
+	background: rgba(255,255,255,0);
+	border-radius:10px;
+}
+
+/* Edit each cell in resume */
+.resumeMenu td{
+	border: 5px black solid;
+	width:400px;
+	height:180px;
+	cursor:pointer
+}
+
+/* configuration of resume buttons */
+.resumeButton{
+	background-position:center;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ 	box-shadow: 5px 5px 20px black;				/* Shadow efect */
+ 	border-radius:10px;
+ 	opacity:0.8;
+ 	transition: transform 1s;
+ 			
+}
+
+.resumeButton:hover{
+	border-color:#CC6600;
+	box-shadow: 5px 5px 20px #FF9900;				/* Orange shadow */
+	opacity:1
+}
+
+.resumeButton:active{
+	 transform:matrix(0.586,0.8,-0.8,0.866,0,0)	 
+}
+
+/* Text style in resume page */
+.textResume{
+	background-color:white;
+	margin-left:300px;
+	margin-top:100px;
+	overflow-y:auto;
+	max-width:50%;
+	max-height:70%;
+	border:5px;
+	border-style:outset;	
+	padding:10px 10px 10px 10px;
+	border-radius:10px
+}
+
+/* skill image edit */
+.skillImg{
+	width:400px; 
+	height:10px
+}
+
+/* -------------------------------------------- Rules ---------------------------------------------------------------------*/
+
+/* Configure rules menu */
+.buttonRules{
+	width:500px;
+	height:140px;
+	background-position:center;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+  	box-shadow: 20px 20px 20px black; 
+  	border-radius:10px;
+ 	opacity:0.7;
+ 	transition: transform 1s;
+ 	margin:10px 0px 10px;				/* get distance between buttons */
+
+}
+
+.buttonRules:hover{
+ 	box-shadow: 10px 10px 20px #CC6600;				/* Orange shadow */
+ 	opacity:1;
+ }
+
+.buttonRules:active{
+ 	transform:scale(1.5)	 
+}
+
+/* Text style in rules page */
+.textRules{
+	background-color:white;
+	margin-left:250px;
+	margin-top:50px;
+	overflow-y:auto;
+	max-width:55%;
+	max-height:90%;
+	border:5px;
+	border-style:outset;	
+	padding:0px 10px 10px 10px;
+	border-radius:10px
+}
+
+/* Buttons on Hand Rankings */ 
+.buttonHand{
+	position:inherit;
+	background-image:url('images/Rules_images/buttonHandRanking.png');
+	background-position:center;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+	top: 80px;
+	width:150px;
+	height:30px;
+	border-radius: 8px;
+	font-family:"Comic Sans MS";
+	font-size:medium;
+}
+
+.buttonHand:hover{
+	background-image:url('images/Rules_images/buttonHandRankingOver.png')
+}
+
+.buttonHand:active{
+	transform: translateY(1px) translateX(1px)		/* click efect */
+}
+
+.imgHand{
+	border:0; 
+	width:500px; 
+	height:300px
+}
+
+/* Score button */
+.score{
+ 	width: 50px;
+	height:50px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:white;
+	background-image:url('images/Rules_images/finish.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	border-radius: 40px;
+}
+
+.score:active{
+	transform: translateY(1px) translateX(1px)		
+}
+
+/* Reset button */
+.reset{
+ 	width: 50px;
+	height:50px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:white;
+	background-image:url('images/Rules_images/reset.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	border-radius: 40px;
+}
+
+.reset:active{
+	transform: translateY(1px) translateX(1px)		
+}
+
+/* Show results from quiz */
+.bgclr {
+	background-color: white; 
+	color: black; 
+	font-weight: bold;
+}
+
+/* -------------------------------------------- Code -----------------------------------------------------------------------*/
+
+/* Edit table in code */
+.codeMenu{
+	table-layout:fixed; 
+	width:90px;
+	background: rgba(255,255,255,0);
+	border:0px;
+	border-radius:10px
+}
+
+/* Edit each cell in code */
+.codeMenu td{
+	border: 5px black solid;
+	width:300px;
+	height:180px;
+	font-size:50px;
+	text-align:center;
+	cursor:pointer;
+}
+
+/* Configuration of code buttons */
+.codeButton{
+	background-position:center;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ 	box-shadow: 5px 5px 20px black;				/* Shadow efect */
+ 	border-radius:10px;
+ 	opacity:0.8;
+ 	transition: transform 1s;
+ 		
+}
+
+.codeButton:hover{
+	border-color:#CC6600;
+	box-shadow: 5px 5px 20px #FF9900;				/* Orange shadow */
+	opacity:1
+}
+
+.codeButton:active{
+	 transform:matrix(0.586,0.8,-0.8,0.866,0,0)	 
+}
+
+/* Text style in code page */
+.textCode{
+	background-color:white;
+	font-size:medium;
+	margin-left:250px;
+	margin-top:50px;
+	overflow-y:auto;
+	max-width:75%;
+	max-height:80%;
+	border:5px;
+	border-style:outset;	
+	padding:0px 10px 10px 10px;
+	border-radius:10px
+}
+
+/* text zone where is the source code */
+.textFrame{
+	height:400px; 
+	width:970px;
+	overflow:auto
+}
+/* --------------------------------------------- Play ----------------------------------------------------------------------*/
+
+/* Edit table in resume */
+.playMenu{
+	table-layout:fixed;
+	background: rgba(255,255,255,0);
+	border-radius:10px;
+}
+
+/* Edit each cell in resume */
+.playMenu td{
+	border: 5px black solid;
+	width:400px;
+	height:180px;
+	cursor:pointer
+}
+
+/* configuration of resume buttons */
+.playButton{
+	background-position:center;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ 	box-shadow: 5px 5px 20px black;				/* Shadow efect */
+ 	border-radius:10px;
+ 	opacity:0.8;
+ 	transition: transform 1s;
+ 			
+}
+
+.playButton:hover{
+	border-color:#CC6600;
+	box-shadow: 5px 5px 20px #FF9900;				/* Orange shadow */
+	opacity:1
+}
+
+.playButton:active{
+	 transform:matrix(0.586,0.8,-0.8,0.866,0,0)	 
+}
+
+/* Text style in resume page */
+.playBox{
+	background-color:white;
+	margin-left:50px;
+	margin-top:50px;
+	overflow-y:auto;
+	width:1200px;
+	height:550px;
+	border:5px;
+	border-style:outset;	
+	padding:10px 10px 10px 10px;
+	border-radius:10px
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.9em;
+}
+
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;    
+}
+
+li ol > li {
+  margin: 0;
+}
+
+li ol > li:before {
+  content: counters(item, ".") " ";
+}
+.playImg{
+	height:60px; 
+	width:60px
+}
+
+.playImg:hover{
+	transform:scale(1.5);
+}
+
+/* --------------------------------------------- Contact -------------------------------------------------------------------*/
+
+
+/* Edit table in Contact */
+.contactMenu{
+	background: white;
+	border:5px;
+	border-style:outset;	
+	padding:0px 5px 10px 10px;
+	border-radius:10px
+}
+
+/* number of coluns in input form */
+.form{
+	width: 11em;
+}
+
+/* number of rows in text area */
+.textArea{
+	height:10em;
+	width:20em;
+}
+
+.error {
+	color: #FF0000;
+}
+
+#googleMap{
+	width:450px;
+	height:150px;
+}
+
+
+/* --------------------------------------------- Mobile --------------------------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+
+	/* ----- Menu ------------*/
+	.headline{font-size: 50px}
+		
+	.sidenav {padding-top: 30px;}
+	
+  	.sidenav a {font-size: 18px;}
+  	
+  	.menu{ font-size: 18px;}
+  	
+  	.logo{height:30px;width:30px}
+  	
+  	.center {
+		margin-top:-50px;
+		margin-left:80px;
+	    width: 50%;
+	    padding: 1px;
+	}
+
+  	
+  	/* ----- Resume ----------*/
+  	.textResume{
+	  	margin-left:0px;
+	  	margin-top:0px;
+	  	max-width:100%;
+		max-height:100%;
+		overflow:auto;
+	}
+	
+	.resumeMenu{
+		width:45px;
+		border:0px;
+	}
+
+	.resumeMenu td{
+		border: 5px black solid;
+		width:100px;
+		height:150px;
+		font-size:25px;
+		text-align:center;		
+	}
+	
+	.skillImg{
+		width:120px; 
+		height:10px
+	}
+		
+		
+	/* ----- Rules ----------*/
+	.textRules{
+		margin-left:0px;
+	  	margin-top:0px;
+	  	max-width:100%;
+		max-height:100%;
+		overflow:auto;
+	}
+
+	.buttonHand{
+		width:120px;
+		height:20px;
+		font-size:small;
+	}
+	
+	.imgHand{
+		border:0; 
+		width:140px; 
+		height:70px
+	}
+	
+	.buttonRules{
+		width:260px;
+		height:80px;
+	 	margin:10px 0px 10px -40px 
+	}
+		
+	/* ----- Code ----------*/
+	.codeMenu{
+	margin-left:-50px
+	}
+
+
+	.codeMenu td{
+		width:80px;
+		height:130px;
+		font-size:15px;
+	}
+
+	.textCode{
+		margin-left:0px;
+	  	margin-top:0px;
+	  	max-width:100%;
+		max-height:100%;
+		overflow:auto;
+	}
+	
+	/* ----- Play -------------*/
+
+	.playMenu td{
+		width:160px;
+		height:60px;
+	}
+	
+	.playBox{
+	margin-left:0px;
+	margin-top:0px;
+	max-width:100%;
+	max-height:100%;
+	overflow:auto;
+
+	}
+
+
+	/* ----- Contact ----------*/	
+	
+	.contactMenu{
+		margin:-10px 0px 0px -50px;
+	}
+	
+	.form{
+		width: 7em;	
+	}
+	
+	.textArea{
+		width:10em;
+		height:10em;
+
+	}
+	
+	#googleMap{
+		width:250px;
+		height:100px;
+	}
+
+}

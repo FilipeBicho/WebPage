@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--CSS Styles & JavaScrip extern files-->
+	<link rel="stylesheet" href="styleCSS.css" type="text/css">
+    <script type="text/javascript" src="java.js" ></script>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Code</title>
+</head>
+
+<body>
+
+	<!-- Sliding Menu -->
+	<div id="mySidenav" class="sidenav">
+		<div style=" display: inline-block; position:absolute; top:10px;">
+			<img class="logo" src="images/github.png" alt="GitHub" >
+			<a href="https://github.com/FilipeBicho" style="float:right"> Filipe Bicho </a>"
+		</div>
+		<hr>
+		<a href="resume.html">Resume</a>
+		<a href="rules.html" >Rules</a>
+		<a href="#" style="background-color:#FF9900">Code</a>
+		<a href="play.html">Play</a>
+		<a href="contact.php">Contact</a>
+		<hr>
+		<img  src="images/logo.gif" alt="logo">
+	</div>
+	
+	<div id="main">
+		<!-- Open & Close Menu -->	
+		<span class="menu" rel="mySidenav" onclick="openClose(this,'View ','Hide')">&#9776; Menu</span>
+		<div class="center">
+			<!-- HeadLine -->
+			<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'> 
+			<h1 class="headline"> Code </h1>
+		
+			<table class="codeMenu">
+				<tr>
+					<td class="codeButton" style="background-image:url('images/Code_images/cards.png')" onclick="openBox('cards','boxCards')">Cards</td>
+					<td class="codeButton" style="background-image:url('images/Code_images/deck.jpg')" onclick="openBox('deck','boxDeck')">Deck</td>
+					<td class="codeButton" style="background-image:url('images/Code_images/dealer.jpg')" onclick="openBox('dealer','boxDealer')">Dealer</td>
+				</tr>
+				<tr>
+					<td class="codeButton" style="background-image:url('images/Code_images/hand_evaluation.jpg')" onclick="openBox('handEvaluatiob','boxHandEvaluation')">
+					Hand Evaluation</td>
+					<td class="codeButton" style="background-image:url('images/Code_images/bets.jpg')" onclick="openBox('bets','boxBets')">Bets</td>	
+					<td colspan="3" class="codeButton" style="height:100px; background-image:url('images/Code_images/main.jpg')" onclick="openBox('Main','boxMain')">
+					PokerApplet</td>
+				</tr>
+			</table>		
+		</div>
+	</div>
+	
+	<!-- Cards.java -->
+	<div class="Hide" id="boxCards">
+		<div  id="cards" class="textCode" style="display:none;">
+			<span class="closeButton" onclick="closeBox('cards','boxCards')"></span>
+			<h1 class="title">Cards.java</h1>
+			<hr>
+				<embed class="textFrame" src="sourceCode/Cards.txt"></embed >	
+		</div>
+	</div>
+	
+	<!-- Deck.java -->
+	<div class="Hide" id="boxDeck">
+		<div  id="deck" class="textCode" style="display:none;">
+			<span class="closeButton" onclick="closeBox('deck','boxDeck')"></span>
+			<h1 class="title">Deck.java</h1>
+			<hr>
+				<embed class="textFrame" src="sourceCode/Deck.txt"></embed >	
+		</div>
+	</div>
+
+	<!-- Dealer.java -->
+	<div class="Hide" id="boxDealer">
+		<div  id="dealer" class="textCode" style="display:none;">
+			<span class="closeButton" onclick="closeBox('dealer','boxDealer')"></span>
+			<h1 class="title">Dealer.java</h1>
+			<hr>
+				<embed class="textFrame" src="sourceCode/GiveCards.txt"></embed >	
+		</div>
+	</div>
+
+	<!-- Hand Evaluation.java -->
+	<div class="Hide" id="boxHandEvaluation">
+		<div  id="handEvaluatiob" class="textCode" style="display:none;">
+			<span class="closeButton" onclick="closeBox('handEvaluatiob','boxHandEvaluation')"></span>
+			<h1 class="title">HandEvaluation.java</h1>
+			<hr>
+				<embed class="textFrame" src="sourceCode/HandEvaluation.txt"></embed >	
+		</div>
+	</div>
+
+	<!-- Bets.java -->
+	<div class="Hide" id="boxBets">
+		<div  id="bets" class="textCode" style="display:none;">
+			<span class="closeButton" onclick="closeBox('bets','boxBets')"></span>
+			<h1 class="title">Bets.java</h1>
+			<hr>
+				<embed class="textFrame" src="sourceCode/Bets.txt"></embed >	
+		</div>
+	</div>
+
+	<!-- PokerApplet.java -->
+	<div class="Hide" id="boxMain">
+		<div  id="Main" class="textCode" style="display:none;">
+			<span class="closeButton" onclick="closeBox('Main','boxMain')"></span>
+			<h1 class="title">PokerApplet.java</h1>
+			<hr>
+				<embed class="textFrame" src="sourceCode/PokerApplet.txt"></embed>	
+		</div>
+	</div>
+	
+</body>
+</html>
