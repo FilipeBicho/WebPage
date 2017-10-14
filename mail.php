@@ -17,7 +17,7 @@
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . " " . $last_name;
+    echo "Mail Sent. Thank you for your interesse" . $first_name . " " . $last_name;
     header('Location: contact.php?');
    
  ?>
